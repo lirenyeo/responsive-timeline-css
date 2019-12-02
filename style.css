@@ -1,0 +1,48 @@
+body {
+  font-family: 'Open Sans';
+}
+
+#timeline-bg {
+  height: 900px;
+  width: 100%;
+  position: relative;
+  background-image: url('./timeline-bg.png');
+  background-repeat: no-repeat;
+  background-size: 600px 800px;
+  background-position: 50% 0;
+  margin-top: 150px;
+}
+
+#timeline-bg img {
+  position: absolute;
+  /* object-fit: cover; */
+  height: 150px;
+}
+
+.step {
+  position: absolute;
+}
+
+.step:nth-child(odd) {
+  left: calc(50% + 100px);
+  max-width: 400px;
+  right: auto;
+}
+
+.step:nth-child(odd) img {
+  left: calc(-50% - 400px);
+  right: auto;
+}
+
+.step:nth-child(even) img {
+  right: 0;
+  left: auto;
+  width: 50px;
+}
+
+
+
+.step:nth-child(1) { top: -70px; }
+.step:nth-child(2) { top: 200px; }
+.step:nth-child(3) { top: 428px; }
+.step:nth-child(4) { top: 709px; }
